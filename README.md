@@ -78,3 +78,16 @@ support TRPR cross-platform portability.  Meanwhile, some notes:
    
 2) For tcpdump file analysis, note that full (non-abbreviated) IPv6 address
    syntax MUST be used.
+
+## Building RPM Package
+
+Tested on AlmaLinux 9.2
+
+```
+dnf install -y epel-release rpmdevtools
+dnf group install -y "Development Tools"
+rpmdev-setuptree
+rpmbuild -ba trpr.spec
+```
+
+RPM package will be built in `~/rpmbuild/RPMS/x86_84`.
