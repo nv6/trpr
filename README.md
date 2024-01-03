@@ -67,7 +67,7 @@ points for that histogram bin.  Lines beginning with '#' are ignored as
 comments.
 
 
-### IPv6 Notes
+## IPv6 Notes
 
 TRPR IPv6 support is still a bit "kludgy".  I plan to re-write TRPR to use my 
 "Protolib" stuff to leverage those address-independent classes and to better
@@ -83,7 +83,7 @@ support TRPR cross-platform portability.  Meanwhile, some notes:
 
 Tested on AlmaLinux 9.2
 
-```
+```bash
 dnf install -y epel-release rpmdevtools
 dnf group install -y "Development Tools"
 rpmdev-setuptree
